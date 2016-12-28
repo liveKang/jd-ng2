@@ -14,6 +14,7 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
+import { GlobalState } from './global.state';
 
 import { PagesModule } from './pages/pages.module';
 
@@ -25,7 +26,8 @@ import { XLarge } from './home/x-large';
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
-  AppState
+  AppState,
+  GlobalState
 ];
 
 type StoreType = {
