@@ -1,127 +1,117 @@
 @import 'conf/conf';
 
-$text-color: #ffffff;
+.login-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	min-width: 1080px;
+	z-index: 0;
+	background: url(../images/login-bg.png) no-repeat left center;
 
+	.login-banner{
+		width: 70%;
+		height: 100%;
+		background: url(../images/login-banner.jpg) no-repeat center center;
+		background-size: cover;
+	}
 
-.auth-main {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
+	.auth-login{
+		width: 320px;
+		background: $mainColor;
+		height: 100%;
+		position: absolute;
+		left: 70%;
+		top: 0;
+		padding: 0 30px;
 
-.auth-block {
-  width: 540px;
-  margin: 0 auto;
-  border-radius: 5px;
-  @include bg-translucent-dark(0.55);
-  color: #fff;
-  padding: 32px;
-  h1 {
-    font-weight: $font-light;
-    margin-bottom: 28px;
-    text-align: center;
-  }
-  p {
-    font-size: 16px;
-  }
-  a {
-    text-decoration: none;
-    outline: none;
-    transition: all 0.2s ease;
-    color: $primary;
-    &:hover {
-      color: $primary-dark;
-    }
-  }
+		.auth-login-word{
+			padding-top: 196px;
+			h2{
+				font-size: 32px;
+				font-weight: normal;
+				margin: 0 0 10px;
+				color: #333;
+			}
+			h3{
+				font-size: 26px;
+				margin:0 0 40px;
+				color: #333;
+			}
+		}
 
-  .control-label {
-    padding-top: 11px;
-    color: $text-color;
-  }
+		.auth-block{
+			h1{
+				font-size: 30px;
+				color: #333;
+				margin: 0 0 10px;
+			}
 
-  .form-group {
-    margin-bottom: 12px;
-  }
-}
+			.form-group{
+				margin-bottom: 10px;
+				.control-label{
+					float: left;
+					width: 36px;
+					height: 36px;
+					line-height: 36px;
+					background: #fff;
+					border: 1px solid #ccc;
+					text-align: center;
+				}
 
-.auth-input {
-  width: 300px;
-  margin-bottom: 24px;
-  input {
-    display: block;
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    padding: 4px 10px;
-    outline: none;
-  }
-}
+				.form-control{
+					margin-left: 36px;
+					border: 1px solid #ccc;
+					border-left: 0;
+					height: 36px;
+					line-height: 36px;
+					background: #fff;
 
-a.forgot-pass {
-  display: block;
-  text-align: right;
-  margin-bottom: -20px;
-  float: right;
-  z-index: 2;
-  position: relative;
-}
+					input{
+						width: 100%;
+						height: 33px;
+						top: -2px;
+						position: relative;
+						border:none;
+						text-indent: 10px;
+					}
+				}
 
-.auth-link {
-  display: block;
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 33px;
-}
+				&.login-auto{
+					font-size: 12px;
+					color: #333;
 
-.auth-sep {
-  margin-top: 36px;
-  margin-bottom: 24px;
-  line-height: 20px;
-  font-size: 16px;
-  text-align: center;
-  display: block;
-  position: relative;
-  & > span {
-    display: table-cell;
-    width: 30%;
-    white-space: nowrap;
-    padding: 0 24px;
-    color: $text-color;
-    & > span {
-      margin-top: -12px;
-      display: block;
-    }
-  }
-  &:before, &:after {
-    border-top: solid 1px $text-color;
-    content: "";
-    height: 1px;
-    width: 35%;
-    display: table-cell;
-  }
-}
+					input{
+						margin-right: 3px;
+					}
+				}
 
-.al-share-auth {
-  text-align: center;
-  .al-share {
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    li {
-      margin-left: 24px;
-      &:first-child {
-        margin-left: 0;
-      }
-      i {
-        font-size: 24px;
-      }
-    }
-  }
-}
+				&.login-forgot{
+					text-align: right;
+					color: #00a1e9;
+					font-size: 12px;
+				}
 
-.btn-auth {
-  color: #ffffff!important;
+				.auth-login-btn{
+					width: 100%;
+					color: #fff;
+					background: #00a1e9;
+					font-size: 20px;
+					border: none;
+					font-weight: normal;
+					padding: 5px 0;
+				}
+
+			}
+
+		}
+
+		.login-contact{
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			text-align: center;
+			font-size: 12px;
+			width: 100%;
+		}
+	}
 }

@@ -13,43 +13,61 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.component.css'
+    './app.component.scss'
   ],
   template: `
-    <nav>
-      <span>
-        <a [routerLink]=" ['./'] ">
-          Index
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./home'] ">
-          Home
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./detail'] ">
-          Detail
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./about'] ">
-          About
-        </a>
-      </span>
-    </nav>
+  <div class="px-layout">
+  <div class="px-header clearfix">
+      <div class="px-layout-span" ng-click="toIndex()">
+          <img src="../images/logo.png" />
+      </div>
+      <div class="px-layout-div1">
+          <img src="../images/default-pic-small.png" />
+          <em>{{userInfo.realname}}</em>
+          <button ng-click='logout()'>退出 <span class="icon-exit icon"></span></button>
+      </div>
+  </div>
+  <div class="px-menu clearfix">
+      <p>首页</p>
+      <ul>
+          <li class="px-childmenu"><span class="icon-order-management icon"></span>订单管理</li>
+          <li>我的订单(开发中)</li>
+          <!-- <li ng-click="toMyOrder()">我的订单</li> -->
+          <li>子账号订单(开发中)</li>
+          <!-- <li ng-click="toChildAccountOrder()">子账号订单</li> -->
+      </ul>
+
+      <ul>
+          <li class="px-childmenu"><span class="icon-data-statistics icon"></span>数据统计</li>
+          <li>发货统计(开发中)</li>
+      </ul>
+
+      <ul>
+          <li class="px-childmenu"><span class="icon-child-account icon"></span>子账号管理</li>
+          <li>子账号列表(开发中)</li>
+          <li>新增子账号(开发中)</li>
+      </ul>
+
+      <ul>
+          <li class="px-childmenu"><span class="icon-personal-center icon"></span>个人中心</li>
+          <li>账号概览(开发中)</li>
+          <li>基本资料(开发中)</li>
+          <li>账户安全(开发中)</li>
+          <li>地址管理(开发中)</li>
+      </ul>
+  </div>
+  <div class="main-container" ui-view>
+
+  </div>
+</div>
+
 
     <main>
       <router-outlet></router-outlet>
     </main>
 
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
     <footer>
-      <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
+      <span>京东物流<a [href]="url">@飘香</a></span>
       <div>
         <a [href]="url">
           <img [src]="angularclassLogo" width="25%">

@@ -1,41 +1,29 @@
 $font-family: 'Roboto', sans-serif;
 
-$resXXL: 1280px;
-$resXL: 1170px;
-$resL: 991px;
-$resM: 768px;
-$resS: 660px;
-$resXS: 500px;
-$resXXS: 435px;
-$resMin: 320px;
+@charset "UTF-8";
 
-$top-height: 66px;
-$sidebar-width: 180px;
+.mt10{ margin-top:10px; }
+.ml10{ margin-left: 10px;}
 
-$small-card-height: 114px;
-$xsmall-card-height: 187px;
-$medium-card-height: 400px;
-$extra-medium-card-height: 550px;
-$large-card-height: 974px;
+.fs12{ font-size: 12px; }
 
-$default-animation-duration: 0.2s;
-$default-animation-style: ease-out;
+// color
+$mainColor: #ffdc32;    //main color
+$bgColor: #fbfbfb;    //bg color
+$bgMainContainer: #f4f4f4;    // main container bg
+$fontColor: #333;    // font color
+$hoverColor: #eaeaea;    //hover color
+$white: #FFF;
+$priceColor: #ff3232;    //red price color
+$dashedColor: #e8e8e8;    //dashed border color
+$blue: #00a1e9;    //blue color
+$linkColor: #17b200;
+$green: #17b200;    //green color
+$borderColor: #d8d8d8;    //border color
+$red: #ff3232;    //red color
 
-$assets-root: 'assets/';
-$images-root: $assets-root + 'img/';
-$fonts-root: $assets-root + 'fonts/';
-$font-thin: 100;
-$font-light: 300;
-$font-normal: 400;
-$font-bold: 700;
-$font-bolder: 500;
-$font-ultraBold: 900;
+//全局宽度
+$globalWidth: 100%;
 
-$facebook-color: #3b5998;
-$twitter-color: #55acee;
-$google-color: #dd4b39;
-$linkedin-color: #0177B5;
-$github-color: #6b6b6b;
-$stackoverflow-color: #2F96E8;
-$dribble-color: #F26798;
-$behace-color: #0093FA;
+//默认圆角
+$borderRadius: 5px !default;
