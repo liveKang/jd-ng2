@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
-import { LoginComponent } from './pages/login';
+import { Login } from './pages/login';
 
 import { DataResolver } from './app.resolver';
 
@@ -15,6 +15,6 @@ export const ROUTES: Routes = [
     path: 'detail', loadChildren: () => System.import('./+detail')
       .then((comp: any) => comp.default),
   },
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: Login },
   { path: '**',    component: NoContentComponent },
 ];

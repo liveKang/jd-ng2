@@ -120,7 +120,7 @@ module.exports = function (options) {
 
         {
             test: /\.(scss|sass)$/,
-            loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 versions!sass?sourceMap'
+            use: ['raw-loader', 'sass-loader']
         },
 
         /*
