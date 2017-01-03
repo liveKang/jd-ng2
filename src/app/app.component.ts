@@ -19,10 +19,10 @@ import { AppState } from './app.service';
   <div class="px-layout">
   <div class="px-header clearfix">
       <div class="px-layout-span" ng-click="toIndex()">
-          <img src="../images/logo.png" />
+          <img src="../assets/img/logo.png" />
       </div>
       <div class="px-layout-div1">
-          <img src="../images/default-pic-small.png" />
+          <img src="../assets/img/default-pic-small.png" />
           <em>{{userInfo.realname}}</em>
           <button ng-click='logout()'>退出 <span class="icon-exit icon"></span></button>
       </div>

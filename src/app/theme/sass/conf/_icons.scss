@@ -1,0 +1,91 @@
+.icon {
+  display: inline-block;
+}
+
+.icon-data-statistics{
+	@include sprite($data-statistics);
+}
+
+.icon-child-account{
+	@include sprite($child-account);
+}
+
+.icon-exit{
+    @include sprite($exit);
+}
+
+.icon-order-management{
+    @include sprite($order-management);
+}
+
+.icon-login-user{
+	@include sprite($login-user);
+}
+
+.icon-login-password{
+	@include sprite($login-password);
+}
+
+.icon-personal-center{
+    @include sprite($personal-center);
+}
+
+.icon-exit{
+    @include sprite($exit);
+}
+
+.icon-single{
+    @include sprite($single);
+}
+
+.icon-batch{
+    @include sprite($batch);
+}
+
+.icon-progress-bar{
+    @include sprite($progress-bar);
+}
+
+.icon-back{
+    @include sprite($back);
+}
+
+.icon-back-s{
+    @include sprite($back-s);
+}
+
+.icon-add-round{
+    @include sprite($add-round);
+}
+
+.icon-success{
+    @include sprite($success);
+}
+
+.icon-step-active{
+    @include sprite($step-active);
+}
+
+.icon-time{
+    @include sprite($time);
+}
+
+.icon-modify-package{
+    @include sprite($modify-package);
+}
+
+.icon-begin{
+    @include sprite($begin);
+}
+
+.icon-end{
+    @include sprite($end);
+}
+
+.icon-point{
+    @include sprite($point);
+}
+
+.icon-hand{
+    @include sprite($hand);
+}
